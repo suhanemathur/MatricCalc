@@ -2,8 +2,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:fitsSystemWindows="true">
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,48 +11,66 @@
         android:padding="16dp"
         android:paddingTop="32dp">
 
+        <!-- Matrix 1 Input -->
         <EditText
             android:id="@+id/matrixInput1"
-            android:hint="@string/matrix1_hint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minLines="4"
-            android:gravity="top"
-            android:autofillHints="username"
+            android:gravity="top|start"
             android:inputType="textMultiLine"
-            android:layout_marginBottom="8dp" />
+            android:hint="Matrix 1 (comma-separated rows)"
+            android:textColorHint="#757575"
+            android:textColor="#000000"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
 
+        <!-- Matrix 2 Input -->
         <EditText
             android:id="@+id/matrixInput2"
-            android:hint="@string/matrix2_hint"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minLines="4"
-            android:gravity="top"
-            android:autofillHints="username"
+            android:gravity="top|start"
             android:inputType="textMultiLine"
-            android:layout_marginBottom="8dp" />
+            android:hint="Matrix 2 (comma-separated rows)"
+            android:textColorHint="#757575"
+            android:textColor="#000000"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="12dp" />
 
+        <!-- Spinner for Operation -->
         <Spinner
             android:id="@+id/operationSpinner"
             android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:layout_marginBottom="8dp" />
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Calculate Button -->
         <Button
             android:id="@+id/calculateBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/calculate"
-            android:layout_marginBottom="12dp" />
+            android:text="CALCULATE"
+            android:textColor="@android:color/white"
+            android:backgroundTint="#8A2BE2"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
 
+        <!-- Result Text -->
         <TextView
             android:id="@+id/resultView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/result_placeholder"
+            android:text="Result will appear here"
             android:textSize="16sp"
-            android:textColor="@android:color/black"
-            android:paddingTop="12dp" />
+            android:textColor="#000000"
+            android:paddingTop="12dp"
+            android:gravity="center_horizontal" />
     </LinearLayout>
 </ScrollView>
