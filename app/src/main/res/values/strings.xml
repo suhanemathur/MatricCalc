@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MatrixCalc</string>
+    <string name="matrix1_hint">Matrix 1 (comma-separated rows)</string>
+    <string name="matrix2_hint">Matrix 2 (comma-separated rows)</string>
+    <string name="calculate">CALCULATE</string>
+    <string name="result_placeholder">Result will appear here</string>
+</resources>
